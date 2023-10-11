@@ -7,3 +7,11 @@ function kopaytma(a, b)
 function FIO(fam,ism,sharif) {
   return fam + ism + sharif
 }
+
+  fam = input("Familiya");
+  ism = input("Ism");
+  sharif = input("Sharif");
+  
+  document.getElmentById("FIO").innerHTML = FIO(fam, ism, sharif);
+</script>
+<p id="FIO"></p>
