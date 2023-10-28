@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Jadvalni filtrlash</h2>
+<p>Jadvaldagi maydonlar buyicha qidirish:</p>  
+<input id="myInput" type="text" placeholder="Qdirish..">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Familiya</th>
+    <th>Ism</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Ruslonov</td>
+    <td>Murod</td>
+    <td>murod@urdu.uz</td>
+  </tr>
+  <tr>
+    <td>Matchanov</td>
+    <td>Temur</td>
+    <td>temur@urdu.uz</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>aziz@urdu.uz</td>
+  </tr>
+  <tr>
+    <td>Azizov</td>
+    <td>Ravshan</td>
+    <td>a_r@urdu.uz</td>
+  </tr>
+  </tbody>
+</table>
+  
+<p>Izoh. Bu filter faqat tbody ichidagi qatorlar uchun amal qiladi, header uchun emas.</p>
+
+</body>
+</html>
