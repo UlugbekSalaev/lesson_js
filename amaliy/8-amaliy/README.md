@@ -1,3 +1,4 @@
+## 8-amaliy topshiriqlari
 ## JS da AJAXdan foydalanish topshiriqlari
 
 Siz ushbu topshiriqlarni web-server orqali bajarishingiz mumkin. Shuning uchun oldin web-serverni o'rnatib oling. Tavsiya qilinadi, XAMPP dasturini o'rnatishingiz mumkin. Buni ichida APACHE web-server dasturi mavjud. APACHE web-serverini yoqing. Ushbu sahifadagi [ajax.zip](https://github.com/UlugbekSalaev/lesson_js/raw/main/amaliy/8-amaliy/ajax.zip) faylini yuklab oling va uning ichidagi ajax papkasini xampp/htdocs papkasi ichiga joylang. 
