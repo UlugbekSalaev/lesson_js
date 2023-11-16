@@ -1,0 +1,12 @@
+[
+	{
+		"fam": "Azizov",
+		"ism": "Bahodir",
+		"email": "bahodir@urdu.uz"
+	},
+	{
+		"fam": "Mansurov",
+		"ism": "Bobur",
+		"email": "bobur@urdu.uz"
+	}
+]
