@@ -1,0 +1,30 @@
+[
+{
+"muallif": "Ernest Xeminguey",
+"nomi": "Yomgirda qolgan mushuk"
+},
+{
+"muallif": "Ernest Xeminguey",
+"nomi": "Yomgirda qolgan mushuk"
+},
+{
+"muallif": "Agata Kristi",
+"nomi": "Tilsimli shaxmat"
+},
+{
+"muallif": "Chingiz Aytmatov",
+"nomi": "Askar bola"
+},
+{
+"muallif": "Aziz Nesin",
+"nomi": "Adabiyotsevar"
+},
+{
+"muallif": "Jek London",
+"nomi": "Xayotga muxabbat"
+},
+{
+"muallif": "Rabindranat Tagor",
+"nomi": "Shubxa"
+}
+]

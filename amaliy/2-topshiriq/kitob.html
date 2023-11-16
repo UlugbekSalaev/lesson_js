@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>1-masala: Ushbu <i>kitob.html</i> va <i>kitob.txt</i> fayllaridan foydalangan holda, dunyodagi universitetlar haqida ma'lumotlarni chiqaring. Bunda universitet haqidagi ma'lumotlarni <i>kitob.txt</i> fayliga JSON formatda yozib chiqing, <i>kitob.html</i> faylini qayta ishlang.</p>
+<div id="id01"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var kitoblar = JSON.parse(this.responseText);
+    Print(kitoblar);
+  }
+};
+xmlhttp.open("GET", "kitob.txt", true);
+xmlhttp.send();
+
+function Print(arr) {
+  var out = "";
+  var i;
+  for(i = 0; i < arr.length; i++) {
+    out += '<p>Muallif: ' + arr[i].muallif  + '\t\t'+ 
+    'Kitob:' + arr[i].nomi + '</p>';
+  }
+  document.getElementById("id01").innerHTML = out;
+}
+</script>
+
+</body>
+
+</html>
