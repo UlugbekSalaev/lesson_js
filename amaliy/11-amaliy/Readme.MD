@@ -1,0 +1,1 @@
+JavaScriptda Diagrammalardan foydalanish
